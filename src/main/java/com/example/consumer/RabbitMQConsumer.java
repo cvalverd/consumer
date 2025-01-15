@@ -4,9 +4,11 @@ import com.rabbitmq.client.*;
 
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
+import com.rabbitmq.client.ConnectionFactory;
+
 
 public class RabbitMQConsumer {
-    private final static String QUEUE_NAME = "myQueue";
+    private final static String QUEUE_NAME = "cola";
 
     public static void main(String[] argv) throws IOException, TimeoutException {
         // Establecer conexión y canal a RabbitMQ
